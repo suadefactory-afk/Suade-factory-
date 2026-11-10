@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Suade Shoes in black, white, blue, pink and green. Find your colour and step in style.">
+  <title>Suade Shoes | Step in Style</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="topbar">
+    <span>🚚 Free delivery on orders over R500</span>
+    <span class="topbar-note">Everyday style, every colour.</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Suade Shoes home">
+      <span class="brand-mark">S</span>
+      <span>Suade <small>Shoes</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <label class="search-box">
+      <span class="sr-only">Search shoes</span>
+      <input id="searchInput" type="search" placeholder="Search shoes...">
+      <span aria-hidden="true">⌕</span>
+    </label>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="assets/hero-shoes.jpg" alt="Black lace-up Suade-style shoes">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">THE COLOUR COLLECTION</p>
+        <h1>Suade Shoes</h1>
+        <p>Step in Style. Walk with Confidence.</p>
+        <a class="button" href="#shop">Shop the collection <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <span></span><div><p class="eyebrow">FIND YOUR COLOUR</p><h2>Our Collection</h2></div><span></span>
+      </div>
+      <p class="section-intro">One favourite style. Five colours to choose from.</p>
+      <div class="colour-filters" aria-label="Filter by colour">
+        <button class="filter active" data-filter="all">All colours</button>
+        <button class="filter" data-filter="black">Black</button>
+        <button class="filter" data-filter="white">White</button>
+        <button class="filter" data-filter="blue">Blue</button>
+        <button class="filter" data-filter="pink">Pink</button>
+        <button class="filter" data-filter="green">Green</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-colour="black" data-name="black suade shoes">
+          <div class="product-image"><img src="assets/black-suade.jpg" alt="Black Suade shoes"></div>
+          <div class="product-info"><span class="colour-dot black-dot"></span><h3>Black Suade</h3><p class="price">R399.99</p><button class="add-button" data-product="Black Suade">＋ Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-colour="white" data-name="white suade shoes">
+          <div class="product-image"><img src="assets/white-suade.jpg" alt="White Suade shoes"></div>
+          <div class="product-info"><span class="colour-dot white-dot"></span><h3>White Suade</h3><p class="price">R399.99</p><button class="add-button" data-product="White Suade">＋ Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-colour="blue" data-name="blue suade shoes">
+          <div class="product-image"><img src="assets/blue-suade.jpg" alt="Blue Suade shoes"></div>
+          <div class="product-info"><span class="colour-dot blue-dot"></span><h3>Blue Suade</h3><p class="price">R399.99</p><button class="add-button" data-product="Blue Suade">＋ Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-colour="pink" data-name="pink suade shoes">
+          <div class="product-image"><img src="assets/pink-suade.jpg" alt="Pink Suade shoes"></div>
+          <div class="product-info"><span class="colour-dot pink-dot"></span><h3>Pink Suade</h3><p class="price">R399.99</p><button class="add-button" data-product="Pink Suade">＋ Add to Cart</button></div>
+        </article>
+        <article class="product-card" data-colour="green" data-name="green suade shoes">
+          <div class="product-image"><img src="assets/green-suade.jpg" alt="Green Suade shoes"></div>
+          <div class="product-info"><span class="colour-dot green-dot"></span><h3>Green Suade</h3><p class="price">R399.99</p><button class="add-button" data-product="Green Suade">＋ Add to Cart</button></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No shoes found. Try another search.</p>
+      <p class="cart-message" id="cartMessage" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><span>✓</span><p>Carefully selected style</p></div>
+      <div><span>🚚</span><p>Delivery available</p></div>
+      <div><span>↩</span><p>Friendly customer support</p></div>
+      <div><span>♡</span><p>Made for everyday style</p></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">ABOUT OUR STORE</p>
+      <h2>Your style. Your colour.</h2>
+      <p>Welcome to Suade Shoes! Explore our lace-up shoe collection and choose the colour that suits your style. We are here to help you find your next favourite pair.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">S</span><span>Suade <small>Shoes</small></span></a><p>Step in Style. Walk with Confidence.</p></div>
+    <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a></div>
+    <div><h3>Contact</h3><p>Add your email address here</p><p>Add your social media links here</p></div>
+    <div><h3>Stay in the loop</h3><p>Contact us to ask about colours, sizes and orders.</p><a class="footer-contact" href="mailto:hello@example.com">Email Suade Shoes</a></div>
+    <p class="copyright">© <span id="year"></span> Suade Shoes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
